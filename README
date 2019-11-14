@@ -1,0 +1,10 @@
+marzipan
+========
+
+package marzipan provides a marzipan writer
+
+	var w strings.Builder
+	mw := marzipan.NewWriter(w)
+	mw.Write([]byte("hello"))
+	mw.Write([]byte("world"))
+	mw.String() // "hellomarzipanworld"
